@@ -1,0 +1,47 @@
+# naming
+학습공동체 스터디 그룹 2주차 코드 이름 짓기 활동 입니다.
+
+1) 명확한 용도를 내포하기
+
+ex code)
+void fun1(char a1[], char a2[], int n)
+{
+       for  (int i=0; i<n; i++)
+            a2[i] = a1[i];
+}
+
+=>
+void copy(char from[], char to[], int length)
+{
+      for (int i=0; i<length; i++)
+           to[i] = from[i];
+}
+
+
+2) 코드에서 찾아보기 쉽게 작성하기
+
+ex code)
+for (int i=0; i<9; i++)
+    s += (a[i] * 2) / 7;
+
+=>
+const int WEEKEND_PER_WEEK = 2;
+const int DAY_PER_WEEK = 7;
+for (int i=0; i<30; i++)
+      SalaryMonth += (SalyaryDay[i] * WEEKEND_PER_WEEK) / DAY_PER_WEEK);
+
+
+3) 보편적으로 사용되는 변수명을 사용하기
+
+ex with java) 
+java의 경우 폴더를 사용하는 용도에 따라 controller, dto, entity, repository, service로 나누어 폴더명을 작성하고 해당 폴더 안에 들어있는 파일 이름도 폴더 이름으로 끝나게 보편적으로 작성한다.
+
+
+4) 이름을 간단하게 작성하고 언더바를 제외한 특수 문자 사용 자제하기
+
+ex) 
+a_list_of_names_of_all_authors
+=> author_name_list
+
+
+5) 파일명을 대문자로 시작하기
